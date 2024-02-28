@@ -1,0 +1,275 @@
+
+*** Running vivado
+    with args -log Proiect.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Proiect.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source Proiect.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/PSN/Proiect/Proiect.srcs/utils_1/imports/synth_1/Proiect.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/PSN/Proiect/Proiect.srcs/utils_1/imports/synth_1/Proiect.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Proiect -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11212
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port a is neither a static name nor a globally static expression [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:132]
+WARNING: [Synth 8-1565] actual for formal port b is neither a static name nor a globally static expression [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:132]
+WARNING: [Synth 8-1565] actual for formal port c is neither a static name nor a globally static expression [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:132]
+WARNING: [Synth 8-1565] actual for formal port d is neither a static name nor a globally static expression [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'Proiect' [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:42]
+INFO: [Synth 8-3491] module 'counter' declared at 'D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/counter/counter.srcs/sources_1/new/counter.vhd:35' bound to instance 'eticheta1' of component 'counter' [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'counter' [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/counter/counter.srcs/sources_1/new/counter.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/counter/counter.srcs/sources_1/new/counter.vhd:40]
+INFO: [Synth 8-3491] module 'counter_2b' declared at 'D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/counter_2bit/counter_2bit.srcs/sources_1/new/counter_2b.vhd:35' bound to instance 'eticheta2' of component 'counter_2b' [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'counter_2b' [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/counter_2bit/counter_2bit.srcs/sources_1/new/counter_2b.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'counter_2b' (2#1) [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/counter_2bit/counter_2bit.srcs/sources_1/new/counter_2b.vhd:40]
+INFO: [Synth 8-3491] module 'counter_3b' declared at 'D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/counter_3bit/counter_3bit.srcs/sources_1/new/counter_3b.vhd:34' bound to instance 'eticheta3' of component 'counter_3b' [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'counter_3b' [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/counter_3bit/counter_3bit.srcs/sources_1/new/counter_3b.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'counter_3b' (3#1) [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/counter_3bit/counter_3bit.srcs/sources_1/new/counter_3b.vhd:39]
+INFO: [Synth 8-3491] module 'Rom_palpaire' declared at 'D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/ROM_palpaire/ROM_palpaire.srcs/sources_1/new/Rom_palpaire.vhd:35' bound to instance 'eticheta4' of component 'Rom_palpaire' [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'Rom_palpaire' [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/ROM_palpaire/ROM_palpaire.srcs/sources_1/new/Rom_palpaire.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Rom_palpaire' (4#1) [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/ROM_palpaire/ROM_palpaire.srcs/sources_1/new/Rom_palpaire.vhd:40]
+INFO: [Synth 8-3491] module 'ROM_D_S' declared at 'D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/ROM_D_S/ROM_D_S.srcs/sources_1/new/ROM_D_S.vhd:35' bound to instance 'eticheta5' of component 'ROM_D_S' [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'ROM_D_S' [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/ROM_D_S/ROM_D_S.srcs/sources_1/new/ROM_D_S.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'ROM_D_S' (5#1) [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/ROM_D_S/ROM_D_S.srcs/sources_1/new/ROM_D_S.vhd:40]
+INFO: [Synth 8-3491] module 'ROM_lit_rand' declared at 'D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/ROM_lit_rand/ROM_lit_rand.srcs/sources_1/new/ROM_lit_rand.vhd:34' bound to instance 'eticheta6' of component 'ROM_lit_rand' [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'ROM_lit_rand' [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/ROM_lit_rand/ROM_lit_rand.srcs/sources_1/new/ROM_lit_rand.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'ROM_lit_rand' (6#1) [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/ROM_lit_rand/ROM_lit_rand.srcs/sources_1/new/ROM_lit_rand.vhd:39]
+INFO: [Synth 8-3491] module 'ROM_curgere' declared at 'D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/ROM_curgere/ROM_curgere.srcs/sources_1/new/ROM_curgere.vhd:35' bound to instance 'eticheta7' of component 'ROM_curgere' [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'ROM_curgere' [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/ROM_curgere/ROM_curgere.srcs/sources_1/new/ROM_curgere.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'ROM_curgere' (7#1) [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/ROM_curgere/ROM_curgere.srcs/sources_1/new/ROM_curgere.vhd:40]
+INFO: [Synth 8-3491] module 'priority_encoder' declared at 'D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/priority_encoder/priority_encoder.srcs/sources_1/new/priority_encoder.vhd:34' bound to instance 'eticheta8' of component 'priority_encoder' [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'priority_encoder' [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/priority_encoder/priority_encoder.srcs/sources_1/new/priority_encoder.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'priority_encoder' (8#1) [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/priority_encoder/priority_encoder.srcs/sources_1/new/priority_encoder.vhd:39]
+INFO: [Synth 8-3491] module 'mux4' declared at 'D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/mux_4-1/mux_4-1.srcs/sources_1/new/mux4.vhd:34' bound to instance 'eticheta9' of component 'mux4' [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'mux4' [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/mux_4-1/mux_4-1.srcs/sources_1/new/mux4.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'mux4' (9#1) [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/mux_4-1/mux_4-1.srcs/sources_1/new/mux4.vhd:43]
+INFO: [Synth 8-3491] module 'MuX_2_8' declared at 'D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/MuX_2_8/MuX_2_8.srcs/sources_1/new/MuX_2_8.vhd:34' bound to instance 'eticheta10' of component 'MuX_2_8' [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'MuX_2_8' [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/MuX_2_8/MuX_2_8.srcs/sources_1/new/MuX_2_8.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'MuX_2_8' (10#1) [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/MuX_2_8/MuX_2_8.srcs/sources_1/new/MuX_2_8.vhd:43]
+INFO: [Synth 8-3491] module 'MuX_2_4' declared at 'D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/MuX_2_4/MuX_2_4.srcs/sources_1/new/MuX_2_4.vhd:34' bound to instance 'eticheta11' of component 'MuX_2_4' [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'MuX_2_4' [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/MuX_2_4/MuX_2_4.srcs/sources_1/new/MuX_2_4.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'MuX_2_4' (11#1) [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/MuX_2_4/MuX_2_4.srcs/sources_1/new/MuX_2_4.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Proiect' (12#1) [D:/PSN/Proiect/Proiect.srcs/sources_1/new/Proiect.vhd:42]
+WARNING: [Synth 8-7129] Port switch[0] in module priority_encoder is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1260.836 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/PSN/Proiect/Proiect.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc]
+Finished Parsing XDC File [D:/PSN/Proiect/Proiect.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/PSN/Proiect/Proiect.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Proiect_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Proiect_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1260.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1260.836 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'choice_reg' [D:/PSN/Proiect/Proiect.srcs/sources_1/imports/PSN/priority_encoder/priority_encoder.srcs/sources_1/new/priority_encoder.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   5 Input   32 Bit        Muxes := 2     
+	   9 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design Proiect has port catod[7] driven by constant 1
+WARNING: [Synth 8-3332] Sequential element (eticheta8/choice_reg[1]) is unused and will be removed from module Proiect.
+WARNING: [Synth 8-3332] Sequential element (eticheta8/choice_reg[0]) is unused and will be removed from module Proiect.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     3|
+|4     |LUT2   |     7|
+|5     |LUT3   |     3|
+|6     |LUT4   |     1|
+|7     |LUT5   |     6|
+|8     |LUT6   |    22|
+|9     |MUXF7  |     7|
+|10    |FDRE   |    31|
+|11    |IBUF   |     4|
+|12    |OBUF   |    12|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1260.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1260.836 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1260.836 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1260.836 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1260.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: b4d082c6
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1260.836 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/PSN/Proiect/Proiect.runs/synth_1/Proiect.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Proiect_utilization_synth.rpt -pb Proiect_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 18 00:21:14 2022...
